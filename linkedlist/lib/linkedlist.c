@@ -14,6 +14,8 @@ Node* create_node(int value){
     }
     new_node->value = value;
     new_node->next = NULL;
+    
+    return new_node;
 }
 
 void add_node_head(int value,Node **head){
@@ -33,15 +35,17 @@ void add_node_tail(int value, Node** head){
         while(tmp->next != NULL){
             tmp = tmp->next;
         }
-        tmp->next= tmp;
+        tmp->next= node;
     }
 }
 
 void print_list(Node* head){
+    printf("[");
     while(head != NULL){
         printf("%4d ",head->value);
         head = head->next;
     }
+     printf("]");
     printf("\n");
 }
 
