@@ -96,6 +96,6 @@ void preorder_helper(Node* node) {
     
 }
 void preorder(Node* root){
-    preorder_helper(node);
+    preorder_helper(root);
     printf("\n");
 }
