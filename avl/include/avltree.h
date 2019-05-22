@@ -30,6 +30,7 @@ int get_balance(Node* node);
 Node* get_min_value_node(Node* root);
 void preorder(Node* root);
 void preorder_helper(Node* node);
+
 #ifdef __cplusplus
 }
 #endif
