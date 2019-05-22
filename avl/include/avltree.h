@@ -20,7 +20,7 @@ extern "C" {
 
 int max(int a, int b);
 
-
+Node* creat_node(int key);
 
 
 #ifdef __cplusplus
